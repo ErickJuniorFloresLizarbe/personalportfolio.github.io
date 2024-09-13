@@ -1,5 +1,5 @@
 body{
-    background-color: black;
+    background-color: white;
     display: flex;
     justify-content: center;
     padding: 20px;
@@ -29,18 +29,17 @@ nav {
   }
 
   ul li a {
+    font-family: sans-serif;
     text-decoration: none;
-    color: white;
-    font-size: 14px;
-    font-family: "Libre Baskerville", serif;
-    font-weight: 400;
-    font-style: normal;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 600;
     padding: 10px 20px;
     transition: background-color 0.3s ease;
   }
 
   ul li a:hover {
-    background-color: #5a5a5a45;
+    background-color: #90909016;
     border-radius: 0px;
   }
 
@@ -58,31 +57,43 @@ nav {
   .portada-principal{
     width: 100%;
     height: auto;
-    color: white;
+    color: rgb(0, 0, 0);
     display: flex;
     justify-content: space-evenly;
     /* border: 1px solid rgb(255, 28, 28); */
+    padding-top: 2%;
   }
 
   .portada-content{
     width: 50%;
     height: auto;
-    text-align: left;
+    display: flex;
     justify-content: center;
-    color: white;
-    /* border: 1px solid wheat; */
+    align-items: center;
+    color: rgb(0, 0, 0);
+    /* border: 1px solid black; */
   }
-
+  .portada-subcontent{
+    width: auto;
+    height: auto;
+    color: rgb(0, 0, 0);
+    /* border: 1px solid black; */
+  }
+  .portada-content h2{
+    font-size: 24px;
+    font-family: sans-serif;
+    line-height: 20px;
+  }
   .portada-content h1{
-    padding-left: 15%;
     font-size: 48px;
+    line-height: 0px;
   }
 
   .portada-content h3{
-    line-height: 25px;
-    padding-left: 15%;
-    padding-right: 35%;
-    font-size: 16px;
+    font-family: sans-serif;
+    color: rgb(118, 118, 118);
+    line-height: 30px;
+    font-size: 22px;
   }
 
   .portada-img{
@@ -92,6 +103,11 @@ nav {
     justify-content: center;
     color: white;
     /* border: 1px solid wheat; */
+  }
+
+  .portada-img img{
+    box-shadow: rgba(201, 201, 201, 0.226) 0px 2px 4px 0px, rgba(215, 215, 215, 0.316) 0px 2px 16px 0px;
+
   }
 
   @media (max-width: 768px) {
@@ -104,18 +120,16 @@ nav {
     .portada-content{
       width: 100%;
       min-height: auto;
-      /* border: 1px solid wheat; */
+    }
+    .portada-content h2{
+      font-size: 18px;
     }
     .portada-content h1{
-      font-size: 20px;
-      padding-left: 15%;
-      padding-right: 10%;
+      font-size: 26px;
     }
 
     .portada-content h3{
-      padding-left: 15%;
-      padding-right: 20%;
-      font-size: 11px;
+      font-size: 13px;
       line-height: 19px;
     }
     .portada-img{
