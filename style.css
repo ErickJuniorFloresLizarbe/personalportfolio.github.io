@@ -60,6 +60,7 @@ nav {
     height: auto;
     color: white;
     display: flex;
+    justify-content: space-evenly;
     /* border: 1px solid rgb(255, 28, 28); */
   }
 
@@ -84,26 +85,46 @@ nav {
     font-size: 16px;
   }
 
+  .portada-img{
+    width: 30%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    color: white;
+    /* border: 1px solid wheat; */
+  }
+
   @media (max-width: 768px) {
     .portada-principal{
-      height: 70vh;
+      height: auto;
+      flex-direction: column-reverse;
       align-items: end;
     }
 
     .portada-content{
       width: 100%;
-      min-height: 40vh;
+      min-height: auto;
+      /* border: 1px solid wheat; */
     }
     .portada-content h1{
       font-size: 20px;
-      padding-left: 5%;
+      padding-left: 15%;
       padding-right: 10%;
     }
 
     .portada-content h3{
-      padding-left: 5%;
-      padding-right: 30%;
+      padding-left: 15%;
+      padding-right: 20%;
       font-size: 11px;
       line-height: 19px;
+    }
+    .portada-img{
+      width: 100%;
+      height: auto;
+    }
+
+    .portada-img img{
+      width: 70%;
+      height: auto;
     }
   }
